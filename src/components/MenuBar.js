@@ -3,14 +3,9 @@ import React from 'react'
 const MenuBar = (props) => {
 
   const handleClick = (event) => {
-    reassignClassName(event)
-    console.log(event.target)
     props.setActiveIcon(event.target.id)
   }
 
-  const reassignClassName = (event) => {
-    event.target.className = "item active"
-  }
 
 
   return (
